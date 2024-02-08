@@ -6,11 +6,35 @@
     <title>TestTask</title>
 </head>
 <body>
-    <form id="form">
-        <input class="input" type="text" required placeholder="key">
-        <input class="input" type="text" required placeholder="subid ">
+    <form id="form" class="form">
+        <input class="input" name="key" id="key" type="text" required placeholder="key">
+        <input class="input" name="subid" id="subid" type="text" required placeholder="subid" disabled>
         <button type="submit" class="submitBtn">Send</button>
     </form>
+    <div id="result_box" class="result_box">
+        <p id="status"></p>
+        <p id="message"></p>
+    </div>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            padding-left: 20px;
+        }
+        .form {
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .result_box {
+            width: 400px;
+            height: 200px;
+            border: 2px solid #000;
+            border-radius: 15px;
+            padding: 30px;
+        }
+    </style>
     <script src="index.js"></script>
 </body>
 </html>
